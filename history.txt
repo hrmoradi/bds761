@@ -1,0 +1,519 @@
+    1  pwd
+    2  cd /
+    3  pwd
+    4  ls
+    5  ls bin
+    6  ls | grep mkdir
+    7  ls /bin | grep mkdir
+    8  ls /bin | grep passwd
+    9  cd bin
+   10  ls | grep mkdir
+   11  cd ..
+   12  cd bin 
+   13  cd /
+   14  cd bin ; ls | grep mkdir
+   15  cd /
+   16  ls 
+   17  ls -a 
+   18  ll
+   19  ll -h
+   20  ls dev
+   21  ls /dev
+   22  ls dev
+   23  echo 1 > tty
+   24  echo 1 > dev/tty
+   25  ls /dev | grep std
+   26  ll /dev | grep std
+   27  echo heloo | cat
+   28  echo heloo 
+   29  ls home
+   30  ls
+   31  cat /etc/hostname
+   32  cat /proc/cgroup
+   33  cat /proc/cgroups
+   34  ll
+   35  ls -l
+   36  cd /home/hmoradi/
+   37  cd -
+   38  cd ~
+   39  cd ..
+   40  cd .
+   41  cd ~
+   42  pwd
+   43  ls /proc/ | grep *.py
+   44  ls *.py
+   45  clear
+   46  pwd
+   47  mkdir ./MyCodes/Python
+   48  mkdir ~/MyCodes/Python
+   49  mkdir -p  ~/MyCodes/Python
+   50  ls 
+   51  ls MyCodes/
+   52  ls /MyCodes/
+   53  ls MyCodes/
+   54  ls /MyCodes/
+   55  clear
+   56  ls MyCodes/
+   57  pwd
+   58  ls /MyCodes/
+   59  ls /MyCodes
+   60  ls /MyCodes/clear
+   61  clear
+   62  rmdir Python
+   63  ls
+   64  cd MyCodes/
+   65  ls 
+   66  rmdir Python/
+   67  vi
+   68  echo 1 > test.txt
+   69  s
+   70  ls
+   71  echo 1 > test.txt
+   72  ls
+   73  cat test.txt
+   74  cd ..
+   75  ls
+   76  rmdir MyCodes/
+   77  rmdir -f MyCodes/
+   78  rmdir -r MyCodes/
+   79  rmdir -rf MyCodes/
+   80  ls
+   81  cp ./MyCodes/test.txt ./MyCodes/test2.txt
+   82  ls MyCodes/
+   83  rm -r ./MyCodes/
+   84  ls
+   85  ls /
+   86  ls -a  /
+   87  ls
+   88  echo 1 > test.txt
+   89  ls 
+   90  mv ./test.txt ../
+   91  mkdir MyCodes
+   92  mv ./test.txt ./MyCodes/
+   93  ls
+   94  ls MyCodes/
+   95  cd MyCodes/
+   96  ls
+   97  mv ./test.txt ../
+   98  ls ..
+   99  cat ../test.txt 
+  100  ls
+  101  cd ..
+  102  l
+  103  ls
+  104  rmdir MyCodes/
+  105  rm test.txt
+  106  ls
+  107  clear 
+  108  python --version
+  109  python3 --version
+  110  which python3
+  111  which ls
+  112  echo $PATH
+  113  ls 
+  114  mkdir
+  115  echo 
+  116  cat 
+  117  echo $PATH
+  118  java 
+  119  java --version
+  120  exit
+  121  sudo apt-get install python3-pip -y
+  122  sudo aptt install python3-pip -y
+  123  exit
+  124  clear
+  125  sudo apt-get update
+  126  sudo apt-get install emacs -y
+  127  sudo apt-get install vim
+  128  emacs test-emacs.txt
+  129  ls
+  130  emacs test-emacs.txt
+  131  vim test-vim.txt
+  132  top
+  133  sudo apt-get install htop
+  134  htop
+  135  sudo apt-get install openssh-server
+  136  sudo service ssh restart
+  137  ssh localhost
+  138  sudo cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+  139  ssh-keygen -t rsa # couple of enters
+  140  sudo cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+  141  ssh-keygen -t rsa # couple of enters
+  142  sudo cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+  143  ssh localhost
+  144  ssh-keygen -t rsa 
+  145  sudo cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+  146  ssh localhost
+  147  sudo apt-get install python3-pip -y
+  148  pip3 install numpy
+  149  sudo -H pip3 install --upgrade pip
+  150  sudo apt-get install git
+  151  git clone https://github.com/hrmoradi/ClassTestGit
+  152  ls
+  153  cd ClassTestGit/
+  154  ls
+  155  cat test.py
+  156  vim test.txt
+  157  ls
+  158  vim test.txt
+  159  python3 test.py test.txt
+  160  python3 test.py first second third
+  161  vim first 
+  162  python3 test.py first
+  163  python3 test.py first.txt
+  164  clear
+  165  python3 test.py test.txt > output.txt
+  166  cat output.txt
+  167  python3 test.py > output.txt
+  168  cat output.txt
+  169  python3 test.py > output.txt 2>err.txt
+  170  cat err.txt
+  171  python3 test.py &> output.txt 
+  172  cat output.txt 
+  173  python3 test.py test.txt &>> output.txt
+  174  cat output.txt 
+  175  python3 test.py test.txt > output.txt
+  176  cat output.txt 
+  177  python3 test.py test.txt >> output.txt
+  178  cat output.txt 
+  179  export filename=text.txt
+  180  export filename=test.txt
+  181  env
+  182  env | grep filename
+  183  echo $filename
+  184  python3 text.py $filename
+  185  python3 test.py $filename
+  186  echo $HOME
+  187  echo $PWD
+  188  pwd
+  189  echo $PATH
+  190  vim ~/.bashrc
+  191  source ~/.bashrc
+  192  echo $filename
+  193  vim ~/.bashrc
+  194  env | grep test
+  195  dpkg -list
+  196  dpkg --list
+  197  dpkg --list |  grep python
+  198  df -h
+  199  du 
+  200  du -d 1 -c -h
+  201  cd /
+  202  du -d 1 -c -h
+  203  du -d 1 -c -h | grep -v "denied"
+  204  du -d 1 -c -h | grep -V "denied"
+  205  du -d 1 -c -h | grep -v "denied"
+  206  cd ~
+  207  ls 
+  208  du -d 1 -c -h | grep -v denied
+  209  history
+  210  history > ~/history.text
+  211  cat history.text 
+  212  git init
+  213  git remote add origin https://github.com/hrmoradi/bsd765/
+  214  git pull origin master
+  215  git pull origin main
+  216  ls
+  217  cat history.text 
+  218  cat history.txt 
+  219  clear
+  220  git status
+  221  ls
+  222  git remote add origin https://github.com/hrmoradi/bsd765/
+  223  ls -a
+  224  rm -r .git
+  225  rm -rf .git
+  226  ls -a
+  227  ls -a | grep git
+  228  git remote add origin https://github.com/hrmoradi/bsd765/
+  229  git init
+  230  git remote add origin https://github.com/hrmoradi/bsd765/
+  231  git pull origin main
+  232  rm -r history.txt
+  233  git pull origin main
+  234  rm -r README.md 
+  235  git pull origin main
+  236  ls
+  237  cat history
+  238  cat history.t
+  239  cat history.text 
+  240  cat history.txt 
+  241  ls
+  242  ls -a
+  243  rm .git/
+  244  rm -r .git/
+  245  rm -rf .git/
+  246  ls
+  247  rm README.md 
+  248  rm history.txt test-emacs.txt test-emacs.txt~ test-vim.txt 
+  249  ls
+  250  ls ClassTestGit/
+  251  ls ClassTestGit/ls
+  252  clear
+  253  ls
+  254  cd clas
+  255  clear
+  256  ls
+  257  mkdir gitTest
+  258  cd gitTest/
+  259  ls
+  260  git init 
+  261  ls
+  262  mv ../history.text ./
+  263  ls
+  264  git init 
+  265  git config --global user.name 'hrmoradi'
+  266  git config --global user.email 'hrmoradi@gmail.com'
+  267  ls -a ../
+  268  ls -a ../.ssh/
+  269  cat ../.ssh/id_rsa.pub 
+  270  git add .
+  271  ls
+  272  git status
+  273  git commit -m "update"
+  274  git push origin main 
+  275  git status
+  276  git push origin master
+  277  git pull origin master
+  278  git checkout main
+  279  git checkout master
+  280  git pull origin master
+  281  git pull origin main
+  282  ls
+  283  git init
+  284  git remote add origin https://github.com/hrmoradi/bds761/
+  285  git pull origin master
+  286  git pull origin main
+  287  ls
+  288  git checkout master
+  289  git checkout main
+  290  ls
+  291  git merge master
+  292  git branch --delete master
+  293  git branch -D --delete master
+  294  git branch --list
+  295  git checkout main
+  296  ls
+  297  ls -a
+  298  cat history 
+  299  history
+  300  history > history.txt
+  301  ls
+  302  git status
+  303  git commit -m "history.txt"
+  304  git add .
+  305  git commit -m "history.txt"
+  306  git status
+  307  git push origin main
+  308  ls
+  309  git status
+  310  history
+  311  git status
+  312  vim bash.sh
+  313  ls
+  314  vim code.py
+  315  ls
+  316  mv code.py resize.py
+  317  ls
+  318  vim bash.sh 
+  319  sh bash.sh first second third
+  320  sh bash.sh 1 second third
+  321  vim bash.sh 
+  322  sh bash.sh 
+  323  vim bash.sh 
+  324  sh bash.sh 
+  325  vim bash.sh 
+  326  sh bash.sh 
+  327  vim bash.sh 
+  328  sh bash.sh 
+  329  cd ..
+  330  git clone https://github.com/hrmoradi/sampleImg
+  331  ls
+  332  cd gitTest/
+  333  ls
+  334  vim resize.py
+  335  sh bash ../sampleImg/
+  336  sh bash.sh ../sampleImg/
+  337  vim bash.sh 
+  338  sh bash.sh ../sampleImg/
+  339  vim bash.sh 
+  340  sh bash.sh ../sampleImg/
+  341  vim bash.sh 
+  342  sh bash.sh ../sampleImg/
+  343  $date
+  344  echo $date 
+  345  echo date 
+  346  echo $(date 
+  347  echo $(date +%Y)
+  348  echo $(date)
+  349  sh bash.sh ../sampleImg/
+  350  vim bash.sh 
+  351  sh bash.sh ../sampleImg/
+  352  vim bash.sh 
+  353  sh bash.sh ../sampleImg/
+  354  vim bash.sh 
+  355  sh bash.sh ../sampleImg/
+  356  vim bash.sh 
+  357  sh bash.sh ../sampleImg/
+  358  vim bash.sh 
+  359  sh bash.sh ../sampleImg/ do 10
+  360  vim bash.sh 
+  361  sh bash.sh ../sampleImg/ do 10
+  362  vim bash.sh 
+  363  sh bash.sh ../sampleImg/ do 10
+  364  vim bash.sh 
+  365  sh bash.sh ../sampleImg/ do 2
+  366  vim bash.sh 
+  367  sh bash.sh ../sampleImg/ do 2
+  368  vim bash.sh 
+  369  sh bash.sh ../sampleImg/  2 do
+  370  vim bash.sh 
+  371  sh bash.sh ../sampleImg/  2 do
+  372  pip install PIL
+  373  pip install Pillow
+  374  sh bash.sh ../sampleImg/  2 do
+  375  vim bash.sh 
+  376  ls ../sampleImg/
+  377  rm README.md 
+  378  ls
+  379  rm *.out
+  380  rm ../sampleImg/*.out
+  381  ls ../sampleImg/
+  382  ls
+  383  rm ../sampleImg/README.md 
+  384  ls
+  385  ls ../sampleImg/
+  386  vim resize.py 
+  387  sh bash.sh ../sampleImg/ 2 dont
+  388  sh bash.sh ../sampleImg/ 3 dont
+  389  vim bash.sh 
+  390  sh bash.sh ../sampleImg/ 3 dont
+  391  vim bash.sh 
+  392  sh bash.sh ../sampleImg/ 3 dont
+  393  vim bash.sh 
+  394  sh bash.sh ../sampleImg/ 3 dont
+  395  vim bash.sh 
+  396  sh bash.sh ../sampleImg/ 3 dont
+  397  vim bash.sh 
+  398  sh bash.sh ../sampleImg/ 3 dont
+  399  vim bash.sh 
+  400  sh bash.sh ../sampleImg/ 3 dont
+  401  vim bash.sh 
+  402  sh bash.sh ../sampleImg/ 3 dont
+  403  vim bash.sh 
+  404  sh bash.sh ../sampleImg/ 3 dont
+  405  vim bash.sh 
+  406  sh bash.sh ../sampleImg/ 3 dont
+  407  sh bash.sh ../sampleImg/ 3 do
+  408  vim resize.py 
+  409  rm ../sampleImg/*.out
+  410  sh bash.sh ../sampleImg/ 3 do
+  411  ls ../sampleImg/
+  412  cat ../sampleImg/pts5R.png-2023.02.27:181400.out
+  413  sh clean.sh
+  414  vim clean.sh
+  415  sh clean.sh
+  416  vim clean.sh
+  417  sh clean.sh
+  418  vim clean.sh
+  419  sh clean.sh
+  420  sh bash.sh ../sampleImg/ 3 dont
+  421  sh bash.sh ../sampleImg/ 3 do
+  422  sh bash.sh ../sampleImg/ 3 dont
+  423  sh bash.sh ../sampleImg/ 3 do
+  424  sh clean.sh
+  425  sh bash.sh ../sampleImg/ 3 do
+  426  vim bash.sh 
+  427  sh bash.sh ../sampleImg/ 3 dont
+  428  vim bash.sh 
+  429  echo eng
+  430  echo env
+  431  echo $env
+  432  env
+  433  env | grep imgD
+  434  env | grep img
+  435  vim bash.sh 
+  436  env 
+  437  env | grep PATH
+  438  env | grep imgDir
+  439  sh bash.sh ../sampleImg/ 3 dont
+  440  vim bash.sh 
+  441  sh bash.sh ../sampleImg/ 3 dont
+  442  env | grep v2
+  443  env | grep v1
+  444  env | grep v3
+  445  vim bash.sh 
+  446  sh bash.sh ../sampleImg/ 3 dont
+  447  vim bash.sh 
+  448  sh bash.sh ../sampleImg/ 3 dont
+  449  vim bash.sh 
+  450  sh bash.sh ../sampleImg/ 3 dont
+  451  vim bash.sh 
+  452  sh bash.sh ../sampleImg/ 3 dont
+  453  vim bash.sh 
+  454  sh bash.sh ../sampleImg/ 3 dont
+  455  env | grep img
+  456  vim bash.sh 
+  457  bash bash.sh ../sampleImg/ 3 dont
+  458  vim bash.sh 
+  459  bash bash.sh ../sampleImg/ 3 dont
+  460  vim bash.sh 
+  461  bash bash.sh ../sampleImg/ 3 dont
+  462  vim bash.sh 
+  463  bash bash.sh ../sampleImg/ 3 dont
+  464  vim bash.sh 
+  465  bash bash.sh ../sampleImg/ 3 dont
+  466  vim bash.sh 
+  467  bash bash.sh ../sampleImg/ 3 dont
+  468  vim bash.sh 
+  469  vim resize.py bas
+  470  history
+  471  bash bash.sh ../sampleImg/ 3 do
+  472  bash clean.sh 
+  473  vim clean.sh 
+  474  git status
+  475  ls
+  476  git add bash.sh 
+  477  git status
+  478  git commit -m "update"
+  479  git push origin main
+  480  ls
+  481  clear
+  482  ls
+  483  rm -rf sampleImg/
+  484  rm -rf gitTest
+  485  ls
+  486  ls 
+  487  ls -a
+  488  rm -rf ./.git
+  489  ls -a
+  490  mkdir gitTest
+  491  cd gitTest/
+  492  ls
+  493  git init
+  494  git remote add origin https://github.com/hrmoradi/bds761/
+  495  git pull origin main 
+  496  ls
+  497  git config --global user.name 'hrmoradi'
+  498  git config --global user.email 'hrmoradi@gmail.com'
+  499  git add .
+  500  git add *
+  501  git add *.py
+  502  git status
+  503  git branch --list
+  504  git checkout main
+  505  ls
+  506  git status
+  507  git branch list
+  508  git branch --list
+  509  git branch --delete list
+  510  git branch --delete master
+  511  git status
+  512  git branch --list
+  513  git commit -m "update"
+  514  git push origin main
+  515  ls
+  516  git branch --list
+  517  ls
+  518  history
+  519  history > history.txt
